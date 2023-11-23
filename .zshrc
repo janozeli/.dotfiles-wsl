@@ -14,9 +14,14 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 fpath=(${ASDF_DIR}/completions $fpath)
 autoload -Uz compinit && compinit
 
+source "$HOME/.scripts/"
+
 alias szsh="source ~/.zshrc"
 alias cc="clear"
 alias ".."="cd .."
 alias ls="eza --header --long --icons --git"
 alias cat="bat"
+alias uu="sudo dnf update -yq"
+alias aa="sudo dnf autoremove -yq"
+alias zshrc="nvim $HOME/.zshrc"
 
