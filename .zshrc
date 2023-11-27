@@ -21,7 +21,5 @@ alias cc="clear"
 alias ".."="cd .."
 alias ls="eza --header --long --icons --git"
 alias cat="bat"
-alias uu="sudo dnf update -yq"
-alias aa="sudo dnf autoremove -yq"
 alias zshrc="nvim $HOME/.zshrc"
 
