@@ -14,7 +14,8 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 fpath=(${ASDF_DIR}/completions $fpath)
 autoload -Uz compinit && compinit
 
-source "$HOME/.scripts/"
+export PATH="$HOME/.asdf/installs/rust/1.74.0/bin:$PATH"
+export PATH="$HOME/.scripts:$PATH"
 
 alias szsh="source ~/.zshrc"
 alias cc="clear"
@@ -22,4 +23,5 @@ alias ".."="cd .."
 alias ls="eza --header --long --icons --git"
 alias cat="bat"
 alias zshrc="nvim $HOME/.zshrc"
+
 
