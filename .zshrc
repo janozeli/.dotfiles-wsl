@@ -14,8 +14,6 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 fpath=(${ASDF_DIR}/completions $fpath)
 autoload -Uz compinit && compinit
 
-export PATH="$HOME/.asdf/installs/flutter/bin:$PATH"
-export PATH="$HOME/.asdf/installs/rust/1.74.0/bin:$PATH"
 export PATH="$HOME/.scripts:$PATH"
 
 alias szsh="source ~/.zshrc"
