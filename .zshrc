@@ -14,8 +14,6 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 fpath=(${ASDF_DIR}/completions $fpath)
 autoload -Uz compinit && compinit
 
-export PATH="$HOME/.scripts:$PATH"
-
 alias szsh="source ~/.zshrc"
 alias cc="clear"
 alias ".."="cd .."
@@ -23,4 +21,13 @@ alias ls="eza --header --long --icons --git"
 alias cat="bat"
 alias zshrc="nvim $HOME/.zshrc"
 
+export PATH="$PATH:$HOME/.scripts"
+# Created by `pipx` on 2024-02-19 18:10:33
+export PATH="$PATH:/home/janozeli/.local/bin"
 
+# bun completions
+[ -s "/home/janozeli/.bun/_bun" ] && source "/home/janozeli/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
