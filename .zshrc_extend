@@ -20,5 +20,6 @@ alias ".."="cd .."
 alias ls="eza --header --long --icons --git"
 alias cat="bat"
 alias zshrc="nvim $HOME/.zshrc"
+alias zshrce="nvim $HOME/.zshrc_extend"
 
 export PATH="$PATH:$HOME/.scripts"
